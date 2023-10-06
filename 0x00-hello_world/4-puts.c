@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(void);
-{	/**
+{
+	/**
  * main - Entry point
  *
  * Description: 'the program's description'
