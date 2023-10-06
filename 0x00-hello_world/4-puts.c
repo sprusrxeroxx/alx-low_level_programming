@@ -1,13 +1,11 @@
 #include  <stdio.h>
 int main(void)
 {
- /**
- * main - Entry point
+	/**
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
  *
- * Description: 'the program's description'
- * @parameter: describe the parameter
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 	puts("\"Programming is like building a multilingual puzzle");
 
