@@ -9,5 +9,5 @@
 
 int main()
 {
-	printf("THE OUTPUT IS IS : %c\n",_isupper('a'));
+	_putchar("%i : %i\n",c,_isupper('A'));
 }
