@@ -6,8 +6,8 @@
  *
  * Return: 0 or 1
  */
-
+char c = 'a';
 int main()
 {
-	_putchar("%i : %i\n",c,_isupper('A'));
+	printf("%c : %i\n",c,_isupper(c));
 }
