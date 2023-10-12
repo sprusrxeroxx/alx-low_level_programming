@@ -1,9 +1,11 @@
-int _isupper(char);
+#include <stdio.h>
+#include "library.h"
 
-(
-	if ( c >= 'A' && c <= 'Z' )
-	return (1);
 
-        else
-        return (0);
-)
+int main()
+{
+	printf("%d + %d = %d\n", 4, 5, add(4,5));
+	printf("%d - %d = %d\n", 10, 7, sub(10,7));
+
+			return 0;
+}

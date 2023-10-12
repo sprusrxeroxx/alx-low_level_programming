@@ -1,18 +1,13 @@
 #include "main.h"
-#include <stdio.h>
+#include "stdio.h"
 /**
- * _isupper - reads if c is a cap or not
- * @c : parameter we are checking
+ * _isupper - uppercase letters
+ * @c: character to check
  *
- * Return : 0 or 1 
+ * Return: 0 or 1
  */
-char c;
 
-char c = "W";
-
-int _isupper(c)
-{	if ( c>= 'A' && c <= 'Z')
-	return (1);
-	else
-	return (0);
+int main()
+{
+	printf("THE OUTPUT IS IS : %c\n",_isupper('a'));
 }
