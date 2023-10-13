@@ -11,9 +11,9 @@ void more_numbers(void)
 int x, y;
 x = 1;
 y = 0;
-	while (x <= 10 )
+	while (x <= 10)
 	{
-		for (y <= 14)
+		while (y <= 14)
 		{
 			if (y >= 10)
 			_putchar('1');
