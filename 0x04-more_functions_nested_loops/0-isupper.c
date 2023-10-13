@@ -1,13 +1,17 @@
 #include "main.h"
-#include "stdio.h"
+
 /**
  * _isupper - uppercase letters
  * @c: character to check
  *
  * Return: 0 or 1
  */
-char c = 'a';
-int main()
+int _isupper(int c)
+
 {
-	printf("%c : %i\n",c,_isupper(c));
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+
 }
