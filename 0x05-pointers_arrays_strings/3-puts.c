@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_puts - PRINTS A STR FOLLOWED BY \n 
+ *_puts - PRINTS A STR FOLLOWED BY \n
  *@str: String var
  *Returns: 0
  */
