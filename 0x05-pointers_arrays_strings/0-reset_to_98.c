@@ -1,4 +1,5 @@
-#include "main.h"
+
+#include <stdio.h>
 
 /**
  *main - takes pointer to an  "int" as a parameter
@@ -10,8 +11,5 @@
 
 void reset_to_98(int *n)
 {
-int *p = &n;
-
-*p = 98;
-return (n);
+*n = 98;
 }
