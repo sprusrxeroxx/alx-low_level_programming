@@ -3,7 +3,7 @@
 
 /**
  * print_rev - printa a string in reverse
- *@s - the str rev
+ *@s: the str rev
  *Returns 0
  */
 
