@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcat - joins two strings
@@ -8,19 +7,13 @@
  * Return: pointer to joined string
  */
 
-char *_strcat(char *str1, char *str2) 
+char *_strcat(char *dest, char *src) 
 {
+	int i = 0 , len = 0; 
+	while(dest[i++])
+		len++;
+	for(i = 0; i < src[i]; i++)
+		dest[len++] = src[i];
 
-  // Concatenate the two strings using a loop
-  char *str3[100];
-  int i = 0;
-  int j = 0;
-  while (str1[i] != '\0') {
-    *str3[j] = str1[i];
-    i++;
-    j++;
-  }
-
-  i = 0;
-  while (str2[i;
+	return (dest);
 }
