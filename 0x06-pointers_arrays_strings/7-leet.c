@@ -7,13 +7,14 @@
  */
 
 char *encode_to_1337(char *string)
-
+{
 while (*string != '\0')
 {
 if (*string == 'a')
 {
 *string = '4';
-} else if (*string == 'e')
+}
+else if (*string == 'e')
 {
 *string = '3';
 }
@@ -35,5 +36,5 @@ else if (*string == 's')
 }
 string++;
 }
-return string;
+return (string);
 }
