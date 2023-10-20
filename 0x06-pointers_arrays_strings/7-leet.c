@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  *encode_to_1337 - encodes a string into 1337.
- *string: a string 
- *Return: a string 
+ *@string: a string
+ *Return: a string
  */
 
 char *encode_to_1337(char *string)
-{
+
 while (*string != '\0')
 {
 if (*string == 'a')
