@@ -13,7 +13,7 @@ while (*string != '\0')
 {
 if (*string >= 'a' && *string <= 'z')
 {
-*string = *string - 32;
+*string -= 32;
 }
 string++;
 }
