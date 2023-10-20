@@ -17,4 +17,5 @@ if (*string >= 'a' && *string <= 'z')
 }
 string++;
 }
+return(string);
 }
