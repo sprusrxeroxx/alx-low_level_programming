@@ -6,10 +6,10 @@
  *@accept: bytes to check for
  *Return: pointer or 0
  */
-char *_strpbrk(const char *s, const char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-const char *p1 = s;
-const char *p2 = accept;
+char *p1 = s;
+char *p2 = accept;
 while (*p1)
 {
 if (*p1 == *p2)
