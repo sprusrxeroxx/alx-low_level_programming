@@ -13,10 +13,10 @@ for (; *haystack != '\0'; haystack++)
 char *a = haystack;
 char *b = needle;
 
-while (*a == *two && *two != '\0')
+while (*a == *b && *b != '\0')
 {
 a++;
-two;
+b++;
 }
 if (*b == '\0')
 return (haystack);
