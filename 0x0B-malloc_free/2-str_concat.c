@@ -46,6 +46,5 @@ k++;
 }
 str[k] = '\0';
 return (str);
-free(str);
 }
 
