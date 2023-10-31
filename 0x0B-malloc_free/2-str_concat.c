@@ -29,7 +29,7 @@ j++;
 }
 len = i + j;
 
-str = malloc(sizeof(char) * len + 2);
+str = malloc(sizeof(char) * len + 1);
 j = 0;
 while (k < len)
 {
