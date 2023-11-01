@@ -37,10 +37,10 @@ str[count] = av[i][len];
 len++;
 count++;
 }
-str[count] = ' ';
+str[count] = '\0';
 count++;
 }
-str[count - 1] = '\0';
+str[count + 1] = '\0';
 return (str);
 free(str);
 }
