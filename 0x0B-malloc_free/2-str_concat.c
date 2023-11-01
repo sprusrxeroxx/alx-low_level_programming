@@ -29,7 +29,7 @@ j++;
 }
 len = i + j;
 
-str = malloc(sizeof(char) * len + 1);
+str = malloc((sizeof(char) * len) + 1);
 j = 0;
 while (k < len)
 {
@@ -46,6 +46,4 @@ k++;
 }
 str[k] = '\0';
 return (str);
-free(str);
 }
-
