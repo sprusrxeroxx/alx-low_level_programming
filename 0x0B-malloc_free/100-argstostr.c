@@ -37,9 +37,8 @@ str[count] = av[i][len];
 len++;
 count++;
 }
-str[count] = ' ';
+str[count] = '\n';
 count++;
-_putchar('\n');
 }
 str[count - 1] = '\0';
 return (str);
