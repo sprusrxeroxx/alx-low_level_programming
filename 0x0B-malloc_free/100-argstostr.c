@@ -37,7 +37,7 @@ str[count] = av[i][len];
 len++;
 count++;
 }
-str[count] = '\n';
+str[count] = ' ';
 count++;
 }
 str[count - 1] = '\0';
