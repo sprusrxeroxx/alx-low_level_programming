@@ -23,7 +23,7 @@ while (av[i][len])
 len++;
 count += len + 1;
 }
-str = malloc(count * sizeof(char));
+str = malloc(count *sizeof(char) + 1);
 if (str == NULL)
 return (NULL);
 
