@@ -8,16 +8,27 @@
  * Return: 0 or 1
  */
 int main(int argc, char *argv[])
+ {
+if (argc < 2) 
 {
-if (argc == 3)
-{
-int a, b;
-a = atoi(argv[1]);
-b = atoi(argv[2]);
-printf("%d\n", a *b);
 return (0);
+printf("\n");
+}
+
+int sum = 0;
+
+for (int i = 1; i < argc; i++) 
+{
+int number = atoi(argv[i]);
+if (number > 0) 
+{
+sum += number;
 }
 else
-printf("Error\n");
+{
 return (1);
+break
+}
+}
+return (0);
 }
