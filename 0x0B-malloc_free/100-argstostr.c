@@ -40,7 +40,8 @@ count++;
 str[count] = '\n';
 count++;
 }
-str[count - 1] = '\0';
+count++;
+str[count] = '\0';
 return (str);
 free(str);
 }
