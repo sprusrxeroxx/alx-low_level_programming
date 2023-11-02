@@ -4,9 +4,9 @@
 #include <string.h>
 /**
  * main - prints minimum number of coins
- * @argc - arg counter
- * @argv - an array
- * Return: 0 or 1 
+ * @argc: arg counter
+ * @argv: an array
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
@@ -35,4 +35,4 @@ int i, j, res;
 	}
 	printf("%d\n", res);
 	return (0);
-}	
+}
