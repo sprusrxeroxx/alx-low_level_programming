@@ -1,5 +1,7 @@
-#include "main.h"
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
  * main - prints minimum number of coins
  * @argc - arg counter
@@ -25,7 +27,7 @@ int i, j, res;
 	}
 	for (j = 0; j < 5 && i >= 0; j++)
 	{
-	while (i >= change[j]
+	while (i >= change[j])
 	{
 	res++;
 	i -= change[j];
