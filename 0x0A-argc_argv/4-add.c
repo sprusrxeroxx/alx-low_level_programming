@@ -12,7 +12,7 @@ int verify_num(char *str)
 {
 	unsigned int count;
 
-	count =0;
+	count = 0;
 	while (count < strlen(str))
 	{
 		if (!(isdigit(str[count])))
@@ -35,12 +35,12 @@ int main(int argc, char *argv[])
 	int i, conv, res;
 
 	i = 1;
-       	sum = 0;
+	res = 0;
 	while (i < argc)
 	{
-		if (verify_num(argv[count])
+		if (verify_num(argv[i]))
 		{
-		conv = atoi(argv[count]);
+		conv = atoi(argv[i]);
 		res += conv;
 		}
 
