@@ -42,4 +42,5 @@ int wildcmp(char *s1, char *s2);
 int is_palindrome(char *s);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
 #endif
