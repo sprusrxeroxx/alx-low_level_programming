@@ -20,7 +20,7 @@ struct dog
  * dog_t - Structure for storing dog info
  */
 
-typedef dog dog_t;
+typedef struct dog dog_t;
 
 void int_dog(struct dog *d, char *name, double age, char *owner);
 void print_dog(struct dog *d);
