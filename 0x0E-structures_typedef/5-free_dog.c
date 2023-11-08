@@ -3,7 +3,7 @@
 
 /**
  * free_dog - frees all field in struct dog
- * @d: field 
+ * @d: field
  * Return: Nothing
  */
 
