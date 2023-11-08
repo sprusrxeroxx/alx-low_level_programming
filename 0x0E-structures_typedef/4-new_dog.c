@@ -12,7 +12,7 @@ char *_strcpy(char *dest, char *src);
  * Return: Null or copies of dog and owner
  */
 
-dog_t *new_dog(char *name, float age,char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *all_dogs;
 	int name_len = 0, own_len = 0;
