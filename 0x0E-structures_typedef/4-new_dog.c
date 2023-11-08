@@ -68,6 +68,14 @@ int _strlen(char *s)
 	}
 	return (a);
 }
+
+/**
+ * _strcpy - copies str
+ * @dest: copy str
+ * @src: original str
+ * Return: string
+ */
+
 char *_strcpy(char *dest, char *src)
 {
 	int b;
