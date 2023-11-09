@@ -4,6 +4,7 @@
  * int_index - prints index of a cmp check
  * @array: an array
  * @cmp: function pointer
+ * @size: size of array
  * Return: -1 or index
  */
 
