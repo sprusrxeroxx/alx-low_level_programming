@@ -5,8 +5,8 @@
 
 /**
  * main - prints results
- * @argc: number of arguments 
- * @argv: array of pointers 
+ * @argc: number of arguments
+ * @argv: array of pointers
  * Return: 0
  */
 
@@ -29,7 +29,7 @@ int main(int _attribute_((_unused)) argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if (( *op == '/' && b == 0) || 
+	if ((*op == '/' && b == 0) ||
 	(*op == '%' && b == 0))
 	{
 		printf("Error\n");
