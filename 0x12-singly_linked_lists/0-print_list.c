@@ -2,36 +2,31 @@
 #include "lists.h"
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
-/*NODE STRUCTURE*/
-typedef struct list_s
-{
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-} list_t;
-/**
  * size_t print_list - function that prints ll elements in a list 
  * @h: an element in a list
  * Return: The number of nodes
  */
 
 /*PRINT FUNCTION*/
-int print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
-    list_t *current_node = head;
+	size_t cout = 0;
+	const list_t *current_node = h;
+
    	while ( current_node != NULL) 
 	{
-        	printf("%s ", current_node->str);
-        	current_node = current_node->next;
-		len++;
+		if (current_node->str == NULL)
+		{
+		printf("[0] (nil)");
+		}
+		
+		else
+		{
+			cout++;
+        		printf("[%d] %s\n", current_node->len, current_node->str);
+        		current_node = current_node->next;
+		}
     	}
-	return (len);
+	return (cout);
 }
 
