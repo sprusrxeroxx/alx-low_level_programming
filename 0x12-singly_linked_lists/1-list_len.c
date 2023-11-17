@@ -13,8 +13,10 @@ size_t list_len(const list_t *h)
 	size_t cout = 0;
 
 	while (h)
+	{
 	h = h->next;
 	cout++;
+	}
 	
 
 	return (cout);
