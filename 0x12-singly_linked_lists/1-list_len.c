@@ -1,31 +1,22 @@
-#include <stdlib.h>
-#include <strings.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * add_node -...
- * @head:...
- * @str: ...
- * Return: 0
+ * list_len - counts number of elements in list
+ * @h: a linked list
+ * Return: element count of list
  */
 
-list_t *add_node(list_t **head, const char *str)
+size_t list_len(const list_t *h)
 {
-	list_t *temp;
-	int length = 0;
+	size_t cout = 0;
 
-	temp = malloc(sizeof(list_t));
+	while (h)
+	h = h->next;
+	cout++;
+	
 
-	if (temp == NULL)
-	return (NULL);
-
-	while (str[length])
-		length++;
-
-	temp->len = length;
-	temp->str = strdup(str);
-	temp->next = *head;
-	*head = temp;
-
-	return (temp);
+	return (cout);
 }
+
