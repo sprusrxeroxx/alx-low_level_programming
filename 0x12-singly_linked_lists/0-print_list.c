@@ -13,19 +13,16 @@ size_t print_list(const list_t *h)
 	size_t cout = 0;
 	const list_t *current_node = h;
 
-   	while ( current_node != NULL) 
+   	while (current_node) 
 	{
 		if (current_node->str == NULL)
-		{
 		printf("[0] (nil)");
-		}
 		
 		else
-		{
-			cout++;
-        		printf("[%d] %s\n", current_node->len, current_node->str);
-        		current_node = current_node->next;
-		}
+        	printf("[%d] %s\n", current_node->len, current_node->str);
+
+	cout++;
+	current_node = current_node->next;
     	}
 	return (cout);
 }
