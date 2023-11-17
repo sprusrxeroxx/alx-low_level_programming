@@ -23,7 +23,7 @@ typedef struct list_s
  */
 
 /*PRINT FUNCTION*/
-size_t print_list(const list_t *h)
+int print_list(const list_t *h)
 {
     list_t *current_node = head;
    	while ( current_node != NULL) 
