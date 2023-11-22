@@ -4,14 +4,14 @@
 
 /**
  *listint_len -  returns the number of elements in a linked list
- *@h: a  pointer to a list element 
+ *@h: a  pointer to a list element
  *
  *Return: number of elements in a linked list
  */
 
 size_t listint_len(const listint_t *h)
 {
-	const listint_t *current = h; 
+	const listint_t *current = h;
 	int cout = 0;
 
 	while (current != NULL)
