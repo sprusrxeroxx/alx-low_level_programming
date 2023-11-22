@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * free_listint - frees the list of elements 
- * @head: a pointer to a list element 
+ * free_listint - frees the list of elements
+ * @head: a pointer to a list element
  * Return: Nothing
  */
 
