@@ -2,7 +2,7 @@
 
 
 /**
- * set-it - sets the value of a bit to 1 at idx
+ * set_bit - sets the value of a bit to 1 at idx
  * @n: input number
  * @index: index to set bit
  * Return: 1 or -1
