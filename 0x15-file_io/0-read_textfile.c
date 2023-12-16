@@ -7,26 +7,20 @@
  * Return: NUmber of letters or nothing
  */
 
-ssize_t_read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file, len, i, res;
-	char *buff;
+	char *buf;
+	ssize_t fd, state, temp;
+	
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	return (0);
 
-	if (filename == NULL)
-		return (0);
+	buf = mallco(sizeof(char) * letters);
+	temp = read(fd, buf, letters);
+	state = write(STDOUT_FILENO, buf, temp);
 
-	file = open(filename, O_RDONLY)
-
-		if (file == -1)
-			return (0);
-
-	buff = malloc(sizeof(char)*letters);
-	if (!buff)
-		return (0);
-
-	read(file, buff, letters);
-	buff[letters] - '\0';
-
-	for (i = 0; buff[i] != '\0'; i += 1)
-		len += 1;
+	free(buf);
+	close(fd);
+	return (state);	
 }
