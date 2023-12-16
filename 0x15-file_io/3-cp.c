@@ -8,6 +8,10 @@
  * Return:0
  */
 
+void error_99(int f0, char *buffer, char *argv);
+void error_98(int f0, char *buffer, char *argv);
+void error_100(int f0, char *buffer);
+
 int main(int argc, char **argv)
 {
 	int f0, f1, res0, res1;
@@ -37,7 +41,7 @@ int main(int argc, char **argv)
 		res1 = write(f0, buffer, res0);
 		error_99(res1, buffer, argv[2]);
 	}
-	while (res1 > BUF_SIZE);
+	while (res0 > 0);
 
 		res0 = close(f1);
 		free(buffer);
@@ -52,12 +56,12 @@ int main(int argc, char **argv)
  */
 
 void error_98(int f0, char *buffer, char *argv)
+
 {
-	if (f0 < 0 )
-	{
-		dprintf(STDERR_FILENO, "Error; can't read from file %s\n", argv);
-		free(buffer);
-		exit(98);
+	if (f0 < 0) {
+	dprintf(STDERR_FILENO, "Error; can't read from file %s\n", argv);
+	free(buffer);
+	exit(98);
 	}
 }
 
@@ -85,7 +89,7 @@ void error_99(int f0, char *buffer, char *argv)
  * @f0: value
  */
 
-void error_100(int f0, char *buffer, char *argv)
+void error_100(int f0, char *buffer)
 {
         if (f0 < 0)
         {
