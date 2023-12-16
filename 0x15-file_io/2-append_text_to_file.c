@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * append_to_file - appends a text to end of file 
+ * append_text_to_file - appends a text to end of file
  * @filename: a filename
  * @text_content: content to be appended
- * Return: appended file or noting 
+ * Return: appended file or noting
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -14,8 +14,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	fd = open (filename, O_WRONLY | O_APPEND);
-	
+	fd = open(filename, O_WRONLY | O_APPEND);
+
 	if (fd == -1)
 		return (-1);
 
