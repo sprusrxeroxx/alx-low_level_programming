@@ -60,7 +60,7 @@ void error_98(int f0, char *buffer, char *argv)
 {
 	if (f0 < 0)
 	{
-	dprintf(STDERR_FILENO, "Error; can't read from file %s\n", argv);
+	dprintf(STDERR_FILENO, "Error; Can't read from file %s\n", argv);
 	free(buffer);
 	exit(98);
 	}
@@ -77,7 +77,7 @@ void error_99(int f0, char *buffer, char *argv)
 {
 	if (f0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error; can't write to %s\n", argv);
+		dprintf(STDERR_FILENO, "Error; Can't write to %s\n", argv);
 		free(buffer);
 		exit(99);
 	}
@@ -94,7 +94,7 @@ void error_100(int f0, char *buffer)
 {
 	if (f0 < 0)
 	{
-		dprintf(STDERR_FILENO, "Error; can't close fd %i\n", f0);
+		dprintf(STDERR_FILENO, "Error; Can't close fd %i\n", f0);
 		free(buffer);
 		exit(100);
 	}
