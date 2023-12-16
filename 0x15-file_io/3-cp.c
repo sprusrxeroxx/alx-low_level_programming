@@ -1,4 +1,4 @@
-#include "man.h"
+#include "main.h"
 #define BUF_SIZE 1024
 
 /**
@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int f0, f1, ,res0, res 1;
+	int f0, f1, res0, res1;
 	char *buffer;
 
 	if (argc != 3)
@@ -25,8 +25,8 @@ int main(int argc, char **argv)
 
 	f1 = open(argv[1], O_RDONLY);
 	error_98(f1, buffer, argv[1]);
-	f0 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, ,0664);
-	error_99(f0, ,buffer, argv[2]);
+	f0 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	error_99(f0, buffer, argv[2]);
 
 	do
 	{
@@ -37,7 +37,8 @@ int main(int argc, char **argv)
 		res1 = write(f0, buffer, res0);
 		error_99(res1, buffer, argv[2]);
 	}
-	while (res1 > BUF_SIZE)
+	while (res1 > BUF_SIZE);
+
 		res0 = close(f1);
 		free(buffer);
 		return (0);
@@ -54,7 +55,7 @@ void error_98(int f0, char *buffer, char *argv)
 {
 	if (f0 < 0 )
 	{
-		dprintf(STDERR_FILEND, "Error; can't read from file %s\n", argv);
+		dprintf(STDERR_FILENO, "Error; can't read from file %s\n", argv);
 		free(buffer);
 		exit(98);
 	}
@@ -69,9 +70,9 @@ void error_98(int f0, char *buffer, char *argv)
 
 void error_99(int f0, char *buffer, char *argv)
 {
-        if (f0 < 0 )
+        if (f0 < 0)
         {
-                dprintf(STDERR_FILEND, "Error; can't write to %s\n", argv);
+                dprintf(STDERR_FILENO, "Error; can't write to %s\n", argv);
                 free(buffer);
                 exit(99);
         }
@@ -86,9 +87,9 @@ void error_99(int f0, char *buffer, char *argv)
 
 void error_100(int f0, char *buffer, char *argv)
 {
-        if (f0 < 0 )
+        if (f0 < 0)
         {
-                dprintf(STDERR_FILEND, "Error; can't close fd %i\n", f0);
+                dprintf(STDERR_FILENO, "Error; can't close fd %i\n", f0);
                 free(buffer);
                 exit(100);
         }
